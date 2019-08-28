@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MVVM-Android</string>
+
+    <!-- Generic error messaged -->
+    <string name="error_no_internet">No internet connection</string>
+    <string name="generic_error_message">Something went wrong, Please try again!</string>
+    <string name="message_session_expired">Your session has expired.</string>
+</resources>
