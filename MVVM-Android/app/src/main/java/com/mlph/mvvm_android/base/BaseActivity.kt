@@ -13,7 +13,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 import com.jaeger.library.StatusBarUtil
-import com.mlph.mvvm_android.MVVMApplication
+import com.mlph.mvvm_android.BaseApplication
 import com.mlph.mvvm_android.R
 import com.mlph.mvvm_android.utils.CommonUtils
 import com.mlph.mvvm_android.utils.DialogUtils
@@ -48,7 +48,7 @@ abstract class BaseActivity<T : ViewDataBinding, V : BaseViewModel<*>> : AppComp
      */
     abstract fun getViewModel(): V
 
-    protected var mvvmApplication: MVVMApplication? = null
+    protected var mvvmApplication: BaseApplication? = null
 
     companion object {
 
@@ -67,7 +67,7 @@ abstract class BaseActivity<T : ViewDataBinding, V : BaseViewModel<*>> : AppComp
         StatusBarUtil.setTranslucentForImageView(this, 50, null)
         performDataBinding()
 
-        mvvmApplication = this.applicationContext as MVVMApplication?
+        mvvmApplication = this.applicationContext as BaseApplication
     }
 
     override fun onResume() {

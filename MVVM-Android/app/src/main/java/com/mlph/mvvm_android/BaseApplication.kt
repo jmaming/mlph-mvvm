@@ -14,7 +14,7 @@ import dagger.android.HasServiceInjector
 import dagger.android.support.HasSupportFragmentInjector
 import javax.inject.Inject
 
-class MVVMApplication : Application(), HasActivityInjector, HasServiceInjector, HasSupportFragmentInjector {
+class BaseApplication : Application(), HasActivityInjector, HasServiceInjector, HasSupportFragmentInjector {
 
     @Inject
     internal lateinit var activityDispatchingAndroidInjector: DispatchingAndroidInjector<Activity>

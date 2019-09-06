@@ -1,6 +1,6 @@
 package com.mlph.mvvm_android.di.component
 
-import com.mlph.mvvm_android.MVVMApplication
+import com.mlph.mvvm_android.BaseApplication
 import com.mlph.mvvm_android.api.ApiModule
 import com.mlph.mvvm_android.di.ActivityBuilder
 import com.mlph.mvvm_android.di.module.AppModule
@@ -28,11 +28,11 @@ interface AppComponent {
     interface Builder {
 
         @BindsInstance
-        fun application(mvvmApplication: MVVMApplication) : Builder
+        fun application(mvvmApplication: BaseApplication) : Builder
 
         fun build() : AppComponent
     }
 
-    fun inject(app: MVVMApplication)
+    fun inject(app: BaseApplication)
 
 }

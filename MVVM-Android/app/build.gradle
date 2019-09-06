@@ -1,4 +1,4 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
 
 apply plugin: 'kotlin-android'
 
@@ -14,7 +14,6 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.mlph.mvvm_android"
         minSdkVersion 15
         targetSdkVersion 28
         versionCode 1
