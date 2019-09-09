@@ -3,17 +3,17 @@
           xmlns:tools="http://schemas.android.com/tools" package="com.mlph.mvvm_android">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <application
-            android:allowBackup="true"
-            tools:ignore="GoogleAppIndexingWarning">
-        <activity
-                android:name=".ui.main.view.MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
+<!--    <application-->
+<!--            android:allowBackup="true"-->
+<!--            tools:ignore="GoogleAppIndexingWarning">-->
+<!--        <activity-->
+<!--                android:name=".ui.main.view.MainActivity">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN"/>-->
 
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
-        </activity>
-    </application>
+<!--                <category android:name="android.intent.category.LAUNCHER"/>-->
+<!--            </intent-filter>-->
+<!--        </activity>-->
+<!--    </application>-->
 
 </manifest>
