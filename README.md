@@ -10,6 +10,6 @@ allprojects {
   add dependency
   
   dependencies {
-		implementation 'com.github.User:Repo:Tag'
+		implementation 'com.github.jmaming:mlph-mvvm:Tag'
 	}
 
